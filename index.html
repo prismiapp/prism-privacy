@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Politique de confidentialité — PRISM</title>
+<style>
+  :root {
+    --bg: #0a0e1a;
+    --surface: #131826;
+    --text: #e8eaed;
+    --text-low: #9ba3b4;
+    --accent: #6ec4ff;
+    --stroke: #1f2638;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 40px 20px;
+  }
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--stroke);
+  }
+  h1 {
+    font-size: 2rem;
+    margin: 0 0 8px 0;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+  }
+  .subtitle {
+    color: var(--text-low);
+    font-size: 0.95rem;
+  }
+  h2 {
+    color: var(--accent);
+    font-size: 1.25rem;
+    margin-top: 40px;
+    margin-bottom: 12px;
+    border-left: 3px solid var(--accent);
+    padding-left: 12px;
+  }
+  h3 {
+    color: var(--text);
+    font-size: 1.05rem;
+    margin-top: 24px;
+    margin-bottom: 8px;
+  }
+  p, li { color: var(--text); }
+  ul { padding-left: 24px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  code {
+    background: var(--surface);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+  .highlight {
+    background: var(--surface);
+    border-left: 3px solid var(--accent);
+    padding: 16px;
+    margin: 16px 0;
+    border-radius: 4px;
+  }
+  footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--stroke);
+    color: var(--text-low);
+    font-size: 0.85rem;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>PRISM</h1>
+  <div class="subtitle">Politique de confidentialité</div>
+  <div class="subtitle">Dernière mise à jour : 20 mai 2026</div>
+</header>
+
+<div class="highlight">
+  <strong>En bref :</strong> PRISM est conçue pour protéger ta vie privée. Tes photos sont
+  chiffrées localement sur ton iPhone et ne quittent jamais l'appareil. Tes messages sont
+  éphémères et chiffrés. Aucune donnée n'est vendue à des tiers, aucun traceur publicitaire
+  n'est intégré.
+</div>
+
+<h2>1. Identité du responsable du traitement</h2>
+<p>
+  L'application <strong>PRISM</strong> est éditée par&nbsp;:
+</p>
+<ul>
+  <li><strong>Éditeur</strong> : Emma Cordou</li>
+  <li><strong>Statut</strong> : particulier</li>
+  <li><strong>Pays</strong> : France</li>
+  <li><strong>Contact</strong> : <a href="mailto:prismiapp@proton.me">prismiapp@proton.me</a></li>
+</ul>
+
+<h2>2. Données collectées</h2>
+
+<h3>2.1. Lors de l'inscription</h3>
+<ul>
+  <li><strong>Adresse email</strong> : pour l'envoi du code OTP (authentification sans mot de passe).</li>
+  <li><strong>Pseudo (@)</strong> : choisi librement, public, immuable.</li>
+  <li><strong>Surnom</strong> : libre, modifiable, affiché à tes contacts.</li>
+</ul>
+
+<h3>2.2. Lors de l'usage</h3>
+<ul>
+  <li><strong>Messages</strong> : texte, vocaux (max 1 min), photos. Chiffrés en transit (TLS).</li>
+  <li><strong>Demandes de contact</strong> : @pseudos vers lesquels tu envoies ou de qui tu reçois une demande.</li>
+  <li><strong>Blocages</strong> : liste des @pseudos que tu as bloqués.</li>
+</ul>
+
+<h3>2.3. Données <em>jamais</em> collectées</h3>
+<ul>
+  <li>Aucune donnée de localisation (GPS).</li>
+  <li>Aucun identifiant publicitaire (IDFA).</li>
+  <li>Aucune analyse comportementale, aucun traceur tiers (pas de Google Analytics, Facebook SDK, etc.).</li>
+  <li><strong>Le contenu de ton vault photo reste sur ton iPhone</strong> : il est chiffré localement (AES-GCM, clé dérivée par PBKDF2-HMAC-SHA256, 600 000 itérations) et n'est jamais transmis à nos serveurs.</li>
+</ul>
+
+<h2>3. Finalités et bases légales</h2>
+<ul>
+  <li><strong>Authentification</strong> (email + code OTP) — base : exécution du contrat (CGU acceptées à l'inscription).</li>
+  <li><strong>Messagerie éphémère</strong> — base : exécution du contrat.</li>
+  <li><strong>Modération</strong> (signalement, blocage) — base : intérêt légitime à protéger les utilisateurs.</li>
+</ul>
+
+<h2>4. Durée de conservation</h2>
+<ul>
+  <li><strong>Messages</strong> : auto-suppression <strong>5 minutes après lecture</strong> par le destinataire, ou <strong>24 heures maximum</strong> si non lus. Suppression définitive côté serveur via une tâche planifiée.</li>
+  <li><strong>Photos uploadées en discussion</strong> : même règle que les messages.</li>
+  <li><strong>Compte (profil, contacts, blocages)</strong> : conservé tant que ton compte est actif. Supprimé immédiatement et définitivement sur ta demande (voir section 7).</li>
+  <li><strong>Vault photo local</strong> : conservé sur ton appareil tant que tu ne le supprimes pas. Pas de copie serveur.</li>
+</ul>
+
+<h2>5. Destinataires des données</h2>
+<p>
+  Aucune donnée n'est vendue, partagée ou cédée à des tiers à des fins commerciales.
+</p>
+<p>
+  Pour faire fonctionner l'app, nous utilisons un sous-traitant technique&nbsp;:
+</p>
+<ul>
+  <li>
+    <strong>Supabase Inc.</strong> (hébergement de la base de données, authentification email,
+    stockage des médias éphémères). Les serveurs Supabase sont localisés dans l'Union européenne.
+    Politique de confidentialité Supabase&nbsp;:
+    <a href="https://supabase.com/privacy">https://supabase.com/privacy</a>
+  </li>
+</ul>
+
+<h2>6. Sécurité</h2>
+<ul>
+  <li>Tes 4 codes (chacun ouvre un vault différent) ne sont <strong>jamais transmis</strong>. Ils restent uniquement sur ton appareil dans le Keychain iOS (zone sécurisée matériellement).</li>
+  <li>Le contenu de ton vault photo est chiffré par AES-GCM avec une clé dérivée de ton code, stockée uniquement sur ton iPhone.</li>
+  <li>Les communications avec nos serveurs utilisent TLS 1.2+.</li>
+  <li>Les codes OTP par email expirent après quelques minutes.</li>
+</ul>
+
+<h2>7. Tes droits</h2>
+<p>
+  Conformément au RGPD (Règlement (UE) 2016/679) et à la loi « Informatique et Libertés »,
+  tu disposes des droits suivants&nbsp;:
+</p>
+<ul>
+  <li><strong>Accès</strong> : obtenir une copie de tes données.</li>
+  <li><strong>Rectification</strong> : corriger une donnée inexacte (ex&nbsp;: surnom).</li>
+  <li><strong>Effacement (droit à l'oubli)</strong> : supprimer ton compte et toutes les données associées.
+    Tu peux le faire directement dans l'app&nbsp;: <em>Réglages → Supprimer mon compte</em>.
+    La suppression est définitive et immédiate côté serveur.</li>
+  <li><strong>Limitation</strong> : demander de geler le traitement de tes données.</li>
+  <li><strong>Portabilité</strong> : recevoir tes données dans un format structuré.</li>
+  <li><strong>Opposition</strong> : t'opposer à un traitement.</li>
+  <li><strong>Retrait du consentement</strong> à tout moment.</li>
+</ul>
+<p>
+  Pour exercer ces droits, écris-nous à&nbsp;:
+  <a href="mailto:prismiapp@proton.me">prismiapp@proton.me</a>.
+</p>
+<p>
+  Si tu estimes que tes droits ne sont pas respectés, tu peux introduire une réclamation
+  auprès de l'autorité de contrôle compétente — en France, la
+  <a href="https://www.cnil.fr">CNIL</a>.
+</p>
+
+<h2>8. Mineurs</h2>
+<p>
+  PRISM n'est pas destinée aux personnes de moins de <strong>13 ans</strong>. Nous ne
+  collectons pas sciemment de données concernant des mineurs de moins de 13 ans. Si tu es
+  parent ou tuteur légal et que tu penses que ton enfant nous a fourni des données
+  personnelles, contacte-nous pour les supprimer.
+</p>
+
+<h2>9. Cookies et traceurs</h2>
+<p>
+  L'application mobile <strong>n'utilise pas</strong> de cookies. Aucun traceur publicitaire,
+  analytique ou comportemental n'est intégré.
+</p>
+
+<h2>10. Modifications de la présente politique</h2>
+<p>
+  Nous pouvons mettre à jour cette politique pour refléter des changements légaux ou
+  techniques. La date de dernière mise à jour est indiquée en haut de cette page. Les
+  modifications importantes te seront notifiées dans l'application.
+</p>
+
+<h2>11. Contact</h2>
+<p>
+  Pour toute question relative à cette politique ou au traitement de tes données&nbsp;:
+  <a href="mailto:prismiapp@proton.me">prismiapp@proton.me</a>
+</p>
+
+<footer>
+  © 2026 PRISM — Tous droits réservés
+</footer>
+
+</div>
+</body>
+</html>
